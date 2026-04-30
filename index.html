@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>原型索引</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --bg-subtle: #f7f7f8;
+  --fg: #0a0a0a;
+  --muted: #737373;
+  --muted-2: #a3a3a3;
+  --border: #e5e5e5;
+  --border-strong: #0a0a0a;
+  --hover: #fafafa;
+  --mono: ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+}
+html, body { background: var(--bg); }
+* { box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Inter", "PingFang SC",
+  "Segoe UI", sans-serif; color: var(--fg);
+  margin: 0; padding: 0; min-height: 100vh;
+  -webkit-font-smoothing: antialiased; }
+.container { max-width: 640px; margin: 0 auto; padding: 80px 28px 60px; }
+
+/* Header */
+.eyebrow { font-family: var(--mono); font-size: 11px; color: var(--muted);
+  text-transform: uppercase; letter-spacing: .1em; margin-bottom: 16px; }
+.eyebrow .dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--fg); margin-right: 8px; vertical-align: 1px; }
+.eyebrow .sep { color: var(--muted-2); margin: 0 10px; }
+h1 { font-size: 36px; font-weight: 600; margin: 0 0 12px;
+  letter-spacing: -.025em; line-height: 1.1; }
+.subtitle { color: var(--muted); font-size: 14px; margin: 0 0 48px;
+  line-height: 1.5; max-width: 480px; }
+
+/* List */
+.list-header { display: flex; align-items: baseline; justify-content: space-between;
+  padding-bottom: 14px; border-bottom: 1px solid var(--border); margin-bottom: 8px;
+  font-family: var(--mono); font-size: 11px; color: var(--muted);
+  text-transform: uppercase; letter-spacing: .08em; }
+.list { display: flex; flex-direction: column; gap: 4px; }
+.card { display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 20px; border: 1px solid var(--border); border-radius: 16px;
+  background: var(--bg); text-decoration: none; color: var(--fg);
+  transition: background-color .15s, border-color .15s, transform .08s; }
+.card:hover { background: var(--hover); border-color: var(--border-strong); }
+.card:active { transform: scale(.997); }
+.card-main { min-width: 0; flex: 1; }
+.card-name { font-weight: 500; font-size: 15px; margin: 0 0 4px;
+  letter-spacing: -.01em; display: flex; align-items: center; gap: 10px; }
+.card-meta { font-size: 12px; color: var(--muted);
+  font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.card-arrow { color: var(--muted-2); flex-shrink: 0; margin-left: 16px;
+  transition: transform .15s, color .15s; }
+.card:hover .card-arrow { color: var(--fg); transform: translateX(2px); }
+.badge { display: inline-flex; align-items: center; padding: 2px 8px;
+  font-size: 10px; font-weight: 500; letter-spacing: .06em;
+  border-radius: 999px; background: var(--fg); color: var(--bg);
+  text-transform: uppercase; font-family: var(--mono); }
+
+/* Empty */
+.empty { padding: 80px 24px; text-align: left;
+  border: 1px dashed var(--border); border-radius: 16px; }
+.empty-title { font-size: 16px; font-weight: 500; margin: 0 0 6px; }
+.empty-sub { color: var(--muted); font-size: 13px; margin: 0;
+  font-family: var(--mono); }
+
+/* Breadcrumb */
+.breadcrumb { font-family: var(--mono); font-size: 11px; color: var(--muted);
+  text-transform: uppercase; letter-spacing: .08em; margin-bottom: 24px;
+  display: flex; align-items: center; gap: 8px; }
+.breadcrumb a { color: var(--muted); text-decoration: none;
+  display: inline-flex; align-items: center; gap: 6px;
+  transition: color .15s; }
+.breadcrumb a:hover { color: var(--fg); }
+
+/* Footer */
+.footer { margin-top: 80px; padding-top: 24px; border-top: 1px solid var(--border);
+  font-family: var(--mono); font-size: 11px; color: var(--muted);
+  text-transform: uppercase; letter-spacing: .08em;
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 16px; flex-wrap: wrap; }
+.footer .contact { color: var(--fg); font-weight: 500; text-transform: none;
+  letter-spacing: 0; }
+.footer .contacts { display: inline-flex; align-items: center; gap: 8px;
+  flex-wrap: wrap; }
+.footer .dot-sep { color: var(--muted-2); }
+@media (max-width: 480px) {
+  .footer { flex-direction: column; align-items: flex-start; }
+}
+</style></head><body><div class="container">
+<div class="eyebrow"><span class="dot"></span>原型索引<span class="sep">·</span>1 个项目</div>
+<h1>原型索引</h1>
+<p class="subtitle">所有原型均经过加密。每个项目使用独立口令，输入一次后该项目所有版本在浏览器内 7 天免重输。</p>
+<div class="list-header"><span>项目</span><span>版本数</span></div>
+<div class="list">
+
+                <a class="card" href="./%E8%AE%A2%E4%BA%A4%E5%88%86%E7%A6%BB/">
+                  <div class="card-main">
+                    <div class="card-name">订交分离</div>
+                    <div class="card-meta">1 个版本 · 作者 毛艳艳</div>
+                  </div>
+                  <div class="card-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></div>
+                </a>
+</div>
+<div class="footer">
+  <span>已加密 · 7 天免重输</span>
+  <span class="contacts">
+    <span>企微 <span class="contact">yunpeng.wang</span></span>
+    <span class="dot-sep">·</span>
+    <span>微信 <span class="contact">xiaohei-o_o</span></span>
+  </span>
+</div>
+</div></body></html>
